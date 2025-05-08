@@ -1,0 +1,12 @@
+[package]
+name = "bugbot9000"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+crates-index = "0.19"
+crates_io_api = "0.11"
+git2 = { version = "0.16", default-features = false, features = ["https"] }
+clap = { version = "4.5", features = ["derive"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
